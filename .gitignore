@@ -1,1 +1,4 @@
 .kube/
+.cache
+.kube/cache
+.sudo*
