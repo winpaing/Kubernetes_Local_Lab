@@ -10,8 +10,8 @@ Vagrant.configure("2") do |config|
     vm1.vm.box = "bento/ubuntu-22.04"
     vm1.vm.network "private_network", ip: "192.168.58.40", name: "vboxnet0"
     
-    vm1.vm.synced_folder ".", "/home/vagrant", type: "virtualbox"
-    
+    #vm1.vm.synced_folder ".", "/home/vagrant", type: "virtualbox"
+    vm1.vm.synced_folder "/Users/winpaing/Desktop/Kubernetes_Local_Lab", "/home/vagrant", type: "virtualbox"
     vm1.vm.provider "virtualbox" do |vb|
       vb.name = "kubernetes-local-setup"
       vb.memory = "8192"

@@ -46,3 +46,17 @@ kubectl describe pod nginx
 kubectl get pod -owide
 curl 10.239.1.2
 curl 10.239.1.3:80
+ls
+kubectl get node
+vim ~/.bashrc
+alias k="kubernets"
+k
+alias k="kubectl"
+k
+k run nginx --port=80 --image=nginx --dry-run=clinet 
+k run nginx --port=80 --image=nginx --dry-run=client
+k run nginx --port=80 --image=nginx --dry-run=client -oyaml 
+ls
+pwd
+rebot
+reboot

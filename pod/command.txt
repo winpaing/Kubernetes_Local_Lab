@@ -1,0 +1,6 @@
+kubectl run nginx --port=80 --image=nginx --dry-run=client  -oyaml > ~/pod/nginx.yaml
+kubectl apply -f nginx.yaml 
+kubectl get pods -owide
+kubectl describe pod nginx
+kubectl exec -it nginx -- bash
+kubectl delete pod nginx
