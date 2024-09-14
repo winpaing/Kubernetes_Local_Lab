@@ -1,0 +1,4 @@
+kubectl create deployment web-deploy --image nginx --dry-run -o yaml > deployment.y
+kubectl replace -f deployment.yaml
+kubectl  get deployment -owide
+kubectl describe deployment web-deploy
